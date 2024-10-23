@@ -41,7 +41,7 @@ main {
     gap: 1rem;
 }
 
-button {
+button, #contact {
     background-color: transparent;
     border: 1px solid white;
     color: white;
@@ -50,9 +50,11 @@ button {
     transition: all 0.3s ease;
     font-family: 'Roboto Mono', monospace;
     font-size: 1rem;
+    text-decoration: none;
+    display: inline-block;
 }
 
-button:hover {
+button:hover, #contact:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -87,6 +89,14 @@ button:hover {
     margin: 0 auto;
 }
 
+#copyright {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8rem;
+}
+
 @media (max-width: 768px) {
     #title {
         font-size: 2rem;
@@ -94,5 +104,11 @@ button:hover {
     
     #buttons {
         flex-direction: column;
+    }
+
+    #copyright {
+        bottom: 0.5rem;
+        right: 0.5rem;
+        font-size: 0.7rem;
     }
 }
